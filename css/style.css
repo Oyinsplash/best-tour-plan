@@ -67,8 +67,9 @@ a:hover {
   display: flex;
 }
 
-.search {
-  display: flex;
+.navbar input{
+  background-color: #F5FAFE;
+  border: 1px solid #F5FAFE;
 }
 .searchbar input {
   width: 20rem;
@@ -82,19 +83,6 @@ a:hover {
   font-weight: bold;
   color: #333;
   height: 2em;
-}
-.searchbutton {
-  background-color: #ec1f46;
-  border: #ec1f46;
-  width: 4rem;
-  border-top-right-radius: 0.4rem;
-  border-bottom-right-radius: 0.4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.searchbutton img {
-  width: 1rem;
 }
 
 .nav .others {
@@ -480,6 +468,7 @@ h2 {
   width: 22rem;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  border: 1px solid #fff;
 }
 .searchbtn {
   background-color: #ec1f46;
