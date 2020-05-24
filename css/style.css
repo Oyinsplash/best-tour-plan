@@ -1,0 +1,613 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  background-color: #f5fafe;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+}
+.container {
+  padding: 0 7rem;
+  height: 100%;
+  /* width: 100%; */
+}
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.question p {
+  color: #333;
+  font-weight: bold;
+  font-size: 10px;
+}
+.question span {
+  font-weight: lighter;
+  margin-left: 0.7rem;
+}
+.promo {
+  display: flex;
+  /* width: 20%; */
+  justify-content: space-between;
+}
+.promo img {
+  margin-right: 1.4rem;
+}
+.giftcard {
+  display: flex;
+  align-items: center;
+  margin-right: 3em;
+}
+
+.logo {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 24px;
+}
+.logo span {
+  color: #ec1f46;
+}
+
+.navbar {
+  background-color: #fff;
+  height: 6rem;
+}
+.nav {
+  display: flex;
+}
+
+.search {
+  display: flex;
+}
+.searchbar input {
+  width: 20rem;
+  background-color: #f5fafe;
+  border: 1px solid #f5fafe;
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+  padding: 0.6rem 1.6rem;
+  font-size: 12px;
+  font-family: "Muli", sans-serif;
+  font-weight: bold;
+  color: #333;
+  height: 2em;
+}
+.searchbutton {
+  background-color: #ec1f46;
+  border: #ec1f46;
+  width: 4rem;
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchbutton img {
+  width: 1rem;
+}
+
+.nav .others {
+  display: flex;
+}
+
+.nav .account {
+  display: flex;
+}
+.account img {
+  height: 2.5rem;
+}
+.loyalty {
+  display: flex;
+  align-items: center;
+}
+.navbottom {
+  background-color: #0a223d;
+  height: 4rem;
+  transition: all 0.5s;
+}
+
+.navbottom ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbottom a {
+  color: #fff;
+}
+.navbottom a:hover {
+  color: #ec1f46;
+}
+
+.hotel {
+  display: flex;
+  align-content: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.hoteltitle .name {
+  display: flex;
+}
+.hotelname {
+  font-weight: bold;
+  font-size: 24px;
+  margin-right: 1.4em;
+}
+.flashoffer {
+  border: 1px solid #ec1f46;
+  background-color: #ec1f46;
+  padding: 0.2rem 0.7em;
+  border-radius: 0.2rem;
+  color: #fff;
+}
+
+.rating {
+  border: 1px solid #ec1f46;
+  background-color: #ec1f46;
+  color: #fff;
+  font-size: 14px;
+  /* display: flex; */
+  align-self: center;
+}
+
+.rating .title {
+  font-size: 10px;
+}
+.hotelpicture {
+  background-image: url("../assets/images/hotel.png");
+  height: 27.5rem;
+  width: 66%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.arrows {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.hotelsummary {
+  display: flex;
+  color: #ffffff;
+  justify-content: space-between;
+}
+.left .intro {
+  font-size: 10px;
+}
+.left .price {
+  font-size: 24px;
+}
+.left .info {
+  font-size: 12px;
+}
+.others {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pricing {
+  padding: 2rem;
+  background-color: #0a223d;
+  border-radius: 0.5rem;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pricing .detail {
+  display: flex;
+  justify-content: space-between;
+}
+.detail p {
+  margin: 0.4em 0;
+}
+.right img {
+  margin: 0 0.7em;
+}
+
+.view-btn {
+  width: 100%;
+  background-color: #ec1f46;
+  padding: 1rem 0;
+  text-align: center;
+}
+.map {
+  width: 100%;
+  height: 40%;
+  background: url("../assets/images/map.png");
+  background-size: cover;
+}
+
+.packagemenu {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+.packagemenu a {
+  color: #333;
+}
+.packagemenu a:hover {
+  color: #ec1f46;
+}
+
+.packagesummery h3 {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.summery {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.packagesummery h4 {
+  background-color: #0a223d;
+  color: #fff;
+  padding: 0.5rem 0.7rem;
+  font-weight: normal;
+  margin-bottom: 1.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.packagehighlights,
+.offerdetails {
+  width: 48%;
+  background-color: #fff;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.highlight,
+.list {
+  display: flex;
+  padding: 0 0.7rem;
+}
+.summery li {
+  margin-bottom: 1rem;
+}
+.summery img {
+  margin-right: 1rem;
+}
+.detail .left {
+  width: 50%;
+}
+.packagedetails {
+  background-color: #fff;
+}
+.packagedetails li {
+  margin-bottom: 0.4rem;
+}
+.card {
+  display: flex;
+  flex-flow: row wrap;
+}
+.checkicon img {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.4rem;
+}
+.packagedetails .info {
+  min-width: 33.3%;
+  margin-bottom: 1rem;
+}
+.packagedetails h5 {
+  margin: 0 0 1rem 0.7rem;
+  color: #ec1f46;
+}
+
+.otherpackages {
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  margin-bottom:
+}
+ h2 {
+  color: #333;
+  margin: 3rem 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+}
+.offercontainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.firstoffer .image {
+  background: url("../assets/images/hotel1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+}
+.otherpackages .firstoffer {
+  display: flex;
+  width: 66%;
+  margin-top: 2rem;
+}
+
+.hoteldetail .staricon {
+  display: flex;
+  padding: 0.5rem 0;
+}
+.hoteldetail .title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.hoteldetail {
+  background-color: #0a223d;
+  padding: 2rem;
+}
+.hoteldetail .description {
+  margin-bottom: 1rem;
+}
+.hoteldetail .detail {
+  margin-bottom: 1rem;
+}
+.detail img {
+  margin-right: 1rem;
+}
+.firstoffer .hoteldetail {
+  width: 50%;
+}
+.otherpackages .otheroffer {
+  width: 32%;
+  min-height: 300px;
+  margin-top: 1.5rem;
+}
+
+.otheroffer .image {
+  height: 50%;
+  background-image: url("../assets/images/hotel2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.otheroffer .hoteldetail {
+  padding: 1.5rem 2rem;
+}
+
+.offerbottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.old {
+  font-size: 10px;
+}
+.offerbottom .actionbtn {
+  background-color: #ec1f46;
+  padding: 0.3rem 0.7rem;
+}
+
+.reviewcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviewcontainer h2{
+  margin-bottom: 7rem;
+}
+.testimonycontainer{
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  align-content: center;
+  width: 50%;
+  padding: 1rem 8rem 4rem 8rem;
+}
+.testifier{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.testifier .picture{
+  margin-top: -4rem;
+  align-self: center;
+}
+.testifier p{
+  font-size: 10px;
+  margin-top: .7rem;
+  text-align: center;
+}
+.testifier .name{
+  color: #ec1f46;
+}
+.testifier .staricon{
+  display: flex;
+  justify-content: center;
+  margin-top: .7rem;
+}
+ .testifier .testimony{
+   text-align: justify;
+   font-size: 14px;
+   letter-spacing: 1px;
+ }
+
+ .newsletter{
+   background-image: url("../assets/images/newsletter.png");
+   background-size: cover;
+  
+
+ }
+ .overlay{
+   background-color: rgba(10, 34, 61, 0.8);
+   display: flex;
+   justify-content: flex-end;
+   padding: 7rem 0;
+   width: 100%;
+  }
+ .newsletter .text{
+   font-size: 24px;
+   color: #fff;
+   margin-right: 10rem;
+ }
+ .newsletter span{
+   font-size: 36px;
+   text-transform: uppercase;
+ }
+ .search{
+   display: flex;
+   align-self: center;
+ }
+ .search input{
+   padding: .9rem 1rem;
+   width: 22rem;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+
+ }
+ .searchbtn {
+   background-color: #ec1f46;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0 2rem;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+   color: #fff;
+ }
+ .otheractivities h2{
+   text-align: left;
+ }
+.activities{
+  display: flex;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  justify-content: space-between;
+}
+ .activity{
+   background-image: url("../assets/images/activity1.png");
+  background-size: cover;
+  padding: 10rem 2rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 18%;
+}
+
+  .activity .btn{
+    background:#ec1f46;
+    padding: 0.2rem 0.7rem;
+    margin-top: 1rem;
+  }
+
+footer {
+  font-size: 12px;
+  background-color: #0A223D;
+  color:#fff;
+}
+  footer .logo{
+    font-size: 40px;
+    width: 15%;
+    margin: 0;
+  }
+
+  footer h3{
+  }
+
+  footer .icon{
+    margin-right: 1rem;
+  }
+  .footertop{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+  }
+
+  footer a{
+    line-height: 14px;
+    color: #fff;
+    opacity: 0.8;
+  }
+  .footer{
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer h3{
+    margin-bottom: 2rem;
+  }
+  .contactdetails .address, .contactdetails .tel, .contactdetails .email{
+    display: flex;
+    line-height: 14px;
+    margin-bottom: 1rem;
+  }
+.telinfo p{
+  margin-bottom: .5rem;
+}
+  footer p{
+    opacity: 0.8;
+  }
+footer .contactform{
+  min-width: 50%;
+}
+  footer form{
+    display: flex;
+    flex-direction: column;
+  }
+  footer .info{
+    display: flex;
+    justify-content: space-between;
+  }
+footer input, footer textarea{
+  padding: .5em 2em;
+  margin-bottom: 1em;
+}
+
+footer input{
+  width: 35%;
+}
+footer textarea{
+  height: 5rem;
+}
+  footer button{
+    align-self: flex-start;
+    padding: 1rem 5rem;
+    background-color: #ec1f46;
+    color: #fff;
+    border:1px solid #ec1f46;
+    transition: all .5s;
+  }
+  footer button:hover{
+    border:1px solid #0a223d;
+    color: #0a223d;
+  }
+.footerbottom{
+  padding: 2rem 0;
+}
+  .footerbottom .content{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .footerbottom ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footerbottom img{
+    align-self: flex-end;
+    margin-left: 14em;
+  }
