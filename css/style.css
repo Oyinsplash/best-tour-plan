@@ -61,21 +61,28 @@ a:hover {
 
 .navbar {
   background-color: #fff;
-  height: 6rem;
+  padding: 3rem 0;
 }
 .nav {
   display: flex;
+  justify-content: space-between;
 }
 
-.navbar input{
-  background-color: #F5FAFE;
-  border: 1px solid #F5FAFE;
+.navbar input {
+  background-color: #f5fafe;
+  border: 1px solid #f5fafe;
+}
+
+.nav .otheri {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
 }
 .searchbar input {
   width: 20rem;
   background-color: #f5fafe;
   border: 1px solid #f5fafe;
-  border-top-left-radius: 0.4rem;
+  border-top-left-radius: 0 4rem;
   border-bottom-left-radius: 0.4rem;
   padding: 0.6rem 1.6rem;
   font-size: 12px;
@@ -85,12 +92,16 @@ a:hover {
   height: 2em;
 }
 
-.nav .others {
+.nav .otherii {
   display: flex;
+  width: 25%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav .account {
   display: flex;
+  align-items: center;
 }
 .account img {
   height: 2.5rem;
@@ -215,7 +226,9 @@ a:hover {
   background-color: #ec1f46;
   padding: 1rem 0;
   text-align: center;
+  color: #fff;
 }
+
 .map {
   width: 100%;
   height: 40%;
@@ -443,7 +456,7 @@ h2 {
   background-image: url("../assets/images/newsletter.png");
   background-size: cover;
 }
-.overlay {
+.newsletter .overlay {
   background-color: rgba(10, 34, 61, 0.8);
   display: flex;
   justify-content: flex-end;
@@ -462,20 +475,22 @@ h2 {
 .search {
   display: flex;
   align-self: center;
+  width: 70%;
 }
 .search input {
   padding: 0.9rem 1rem;
-  width: 22rem;
+  width: 70%;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   border: 1px solid #fff;
 }
+
 .searchbtn {
   background-color: #ec1f46;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 2rem;
+  width: 30%;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   color: #fff;
@@ -489,6 +504,7 @@ h2 {
 .activities {
   display: flex;
   color: #fff;
+  flex-wrap: wrap;
   font-size: 16px;
   line-height: 20px;
   justify-content: space-between;
@@ -501,6 +517,7 @@ h2 {
   flex-direction: column;
   align-items: flex-start;
   width: 18%;
+  margin-bottom: 0.5rem;
 }
 
 .activity .btn {
@@ -607,4 +624,92 @@ footer button:hover {
 .footerbottom img {
   align-self: flex-end;
   margin-left: 14em;
+}
+
+@media only screen and (max-width: 768px) {
+  .question {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .question p,
+  .question .promo {
+    margin-bottom: 0.5rem;
+  }
+  .newsletter .overlay {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .newsletter .text {
+    margin: 0 0 2rem;
+  }
+  .hotelpicture {
+    width: auto;
+  }
+  .others {
+    width: auto;
+  }
+  .map {
+    width: 100%;
+    height: 12rem;
+  }
+
+  .packagemenu a {
+    font-size: 0.8rem;
+  }
+  .hotelsummary {
+    flex-direction: column;
+  }
+
+  .packagesummery h3 {
+    text-align: center;
+  }
+
+  .packagehighlights,
+  .offerdetails {
+    width: auto;
+  }
+  .offerdetails {
+    margin-top: 3rem;
+  }
+  .summery {
+    flex-direction: column;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+  .otherpackages .firstoffer {
+    width: auto;
+  }
+
+  .otherpackages .otheroffer {
+    width: 48%;
+  }
+
+  .otheractivities h2 {
+    text-align: center;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+  .footer h3 {
+    text-align: center;
+  }
+  .footer button {
+    align-self: stretch;
+  }
+
+  .footertop .logo {
+    width: 40%;
+  }
+  .footerbottom .content {
+    flex-direction: column;
+  }
+
+  .footerbottom img {
+    align-self: center;
+    margin-left: 0;
+  }
 }
