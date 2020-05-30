@@ -106,6 +106,18 @@ a:hover {
 .account img {
   height: 2.5rem;
 }
+.hamburgermenu{
+margin-left: 1rem;
+  /* border : 1px solid #ec1f46; */
+}
+.hamburgermenu hr{
+  border: 2px solid #ec1f46;
+  margin: .2rem 0;
+  width: 1rem;
+}
+.hamburgermenu .display{
+  display: none;
+}
 .loyalty {
   display: flex;
   align-items: center;
@@ -630,6 +642,25 @@ footer button:hover {
   .question {
     flex-direction: column;
     justify-content: center;
+  }
+  .hamburgermenu .display{
+    display: block;
+  }
+  .navbottom {
+    height: auto;
+  }
+  .navbottom ul {
+    flex-direction: column;
+    padding: 2rem 0;
+    top: -100%;
+    height: 100%;
+    transition: all .5s;
+  }
+  .navbottom li {
+    margin: 1rem 0;
+  }
+  .navbottom a:hover {
+    color: #ec1f46;
   }
   .question p,
   .question .promo {
